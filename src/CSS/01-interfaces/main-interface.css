@@ -43,11 +43,22 @@ h1{
     flex-direction: column;
 }
 
+.left-part.active{
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+
 .right-part{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.right-parts.active{
+    display: none;
 }
 
 .part{
@@ -60,6 +71,11 @@ h1{
     background-color: var(--bg-component);  
     overflow-y: scroll;
     overflow-x: 0;
+}
+
+#component.active{
+    height: 100%;
+    width: 30%;
 }
 
 #component .icon{
@@ -76,9 +92,18 @@ h1{
     overflow-x: 0;
 }
 
+#assemble.part.active{
+    height: 100%;
+    width: 70%;
+}
+
 #preview{
     height: 100%;
     width: 100%;
     background-color: var(--bg-preview);
+}
+
+#preview.active{
+    display: none;
 }
 
