@@ -2,6 +2,7 @@
     --bg-component: #1d201d;
     --bg-assemble: #262728;
     --bg-preview: #1e1e20;
+    --bg-block-panel: #3E55FF;
 }
 
 *{
@@ -51,7 +52,7 @@ h1{
 }
 
 .part{
-    padding: 2%;
+    padding: 1%;
 }
 
 #component{
@@ -61,6 +62,15 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.component-content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
 }
 
 #component .icon{
@@ -98,14 +108,118 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .categorie-element{
-    height: 40px;
     width: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
+
+.icon-categorie{
+    height: 40px;
+    width: 40px;
+}
+
+.block-panel{
+    height: 70%;
+    width: 85%;
+    margin-top: 3%;
+    padding: 3%;
+    background-color: var(--bg-block-panel);
+    border-radius: 5px;
+}
+
+.expand-arrow{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #fff;
+    right: 48%;
+    top: 6.85%;
+}
+
+.main-container.active{
+    height: 100%;
+    width: 100%;
+}
+
+.left-part.active{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#component.active{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-content.active{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.categorie.active{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-panel.active{
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    margin-left: 2%;
+}
+
+.right-part.active{
+    display: none;
+}
+
+#preview.active{
+    display: none;
+}
+
+.expand-arrow.active{
+    position: absolute;
+    top: 5%;
+    right: 3.7%;
+}
+
+.block-exemple1{
+    width: 40%;
+    min-height: 30%;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-content{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.block-text{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.block-input{
+    width: 10%;
+    height: 20%;
+}
+
 
