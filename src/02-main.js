@@ -1,3 +1,5 @@
+// changemennt backgroud pour block selon catégories
+
 const categorieMoove = document.querySelector("#moove")
 const categorieControl = document.querySelector("#control")
 const categorieEvent = document.querySelector("#event")
@@ -25,6 +27,8 @@ categorieVariable.addEventListener("click", function(){
     blockPanel.style.backgroundColor = "#F63131";
 })
 
+// Interface dev (plus de place pour poser les blocks)
+
 const imgExpand = document.querySelector(".expand-arrow")
 const rightPart = document.querySelector(".right-part")
 const leftPart = document.querySelector(".left-part")
@@ -33,6 +37,7 @@ const componentContent = document.querySelector(".component-content")
 const categorie = document.querySelector(".categorie")
 const assemble = document.querySelector("#assemble")
 const preview = document.querySelector("#preview")
+const board = document.querySelector(".board")
 
 
 
@@ -46,8 +51,16 @@ imgExpand.addEventListener("click", function(){
     assemble.classList.toggle("active")
     preview.classList.toggle("active")
     imgExpand.classList.toggle("active")
+    board.classList.toggle("active")
+    zoomOut.classList.toggle("active")
 })
 
+
+
+
+
+
+/** 
 const block = document.addEventListenerAll(".block-exemple1")
 const dropZone = document.querySelector("#assemble")
 
@@ -69,7 +82,7 @@ function knowFree(x, y, width, heigt, blocs){
     }
     return true;
 }
-
+*/
 
 
 

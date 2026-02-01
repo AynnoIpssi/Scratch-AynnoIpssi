@@ -1,61 +1,61 @@
-:root{
+:root {
     --bg-component: #1d201d;
     --bg-assemble: #262728;
     --bg-preview: #1e1e20;
     --bg-block-panel: #3E55FF;
 }
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
 }
 
-h1{
+h1 {
     color: azure;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-.icon{
+.icon {
     width: 30px;
     height: 30px;
 }
 
-.main-container{
+.main-container {
     height: 100%;
     width: 100%;
     display: flex;
 }
 
-.left-part{
+.left-part {
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.right-part{
+.right-part {
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.part{
+.part {
     padding: 1%;
 }
 
-#component{
+#component {
     height: 50%;
     width: 100%;
     background-color: var(--bg-component);
@@ -64,7 +64,7 @@ h1{
     align-items: center;
 }
 
-.component-content{
+.component-content {
     height: 90%;
     width: 100%;
     display: flex;
@@ -73,32 +73,42 @@ h1{
     margin-top: 1%;
 }
 
-#component .icon{
+#component .icon {
     position: absolute;
     top: 3%;
     right: 53%;
 }
 
-#assemble{
+#assemble {
     height: 50%;
     width: 100%;
     background-color: var(--bg-assemble);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    width: 90%;
+    min-height: 85%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     overflow-y: scroll;
-    overflow-x: 0;
+    overflow-x: none;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    position: relative;
 }
 
-#assemble.part.active{
-    height: 100%;
-    width: 70%;
-}
-
-#preview{
+#preview {
     height: 100%;
     width: 100%;
     background-color: var(--bg-preview);
 }
 
-.categorie{
+.categorie {
     width: 85%;
     height: 20%;
     background-color: #fff;
@@ -111,7 +121,7 @@ h1{
     align-items: center;
 }
 
-.categorie-element{
+.categorie-element {
     width: 40px;
     display: flex;
     flex-direction: column;
@@ -119,107 +129,86 @@ h1{
     align-items: center;
 }
 
-.icon-categorie{
-    height: 40px;
-    width: 40px;
+.icon-categorie {
+    height: 50%;
+    width: 50%;
 }
 
-.block-panel{
+.block-panel {
     height: 70%;
     width: 85%;
     margin-top: 3%;
     padding: 3%;
     background-color: var(--bg-block-panel);
     border-radius: 5px;
+    position: relative;
 }
 
-.expand-arrow{
-    width: 50px;
-    height: 50px;
+.expand-arrow {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    background-color: #fff;
-    right: 48%;
-    top: 6.85%;
+    left: 92%;
+    right: 8%;
 }
 
-.main-container.active{
+.main-container.active {
     height: 100%;
     width: 100%;
 }
 
-.left-part.active{
+.left-part.active {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-#component.active{
+#component.active {
     height: 100%;
     width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-.component-content.active{
+.component-content.active {
     display: flex;
     flex-direction: row;
-
 }
 
-.categorie.active{
+.categorie.active {
     height: 100%;
     width: 20%;
     display: flex;
     flex-direction: column;
 }
 
-.block-panel.active{
+.block-panel.active {
     height: 100%;
     width: 80%;
     margin: 0;
     margin-left: 2%;
 }
 
-.right-part.active{
+.right-part.active {
     display: none;
 }
 
-#preview.active{
+#preview.active {
     display: none;
 }
 
-.expand-arrow.active{
+#assemble.active {
+    height: 100%;
+    width: 70%;
+}
+
+.board.active {
+    min-height: 90%;
+}
+
+.expand-arrow.active {
     position: absolute;
-    top: 5%;
-    right: 3.7%;
+    left: 85%;
+    right: 25%;
 }
-
-.block-exemple1{
-    width: 40%;
-    min-height: 30%;
-    background-color: red;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.block-content{
-    display: flex;
-    flex-direction: row;
-    gap: 3%;
-}
-
-.block-text{
-    color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.block-input{
-    width: 10%;
-    height: 20%;
-}
-
-
