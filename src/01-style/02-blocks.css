@@ -1,0 +1,17 @@
+.action-block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-backgroud{
+    position: absolute;
+    z-index: 0;
+}
+
+.move-block{
+    height: 5%;
+    width: 10%;
+}
+

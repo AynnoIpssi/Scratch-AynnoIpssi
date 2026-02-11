@@ -1,3 +1,5 @@
+@import url(02-blocks.css);
+
 :root {
     --bg-component: #1d201d;
     --bg-assemble: #262728;
@@ -150,6 +152,14 @@ h1 {
     position: absolute;
     left: 92%;
     right: 8%;
+}
+
+.block-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container.active {

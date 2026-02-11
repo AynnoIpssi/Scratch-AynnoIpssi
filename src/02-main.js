@@ -6,6 +6,7 @@ const categorieEvent = document.querySelector("#event")
 const categorieOperator = document.querySelector("#operator")
 const categorieVariable = document.querySelector("#variable")
 const blockPanel  = document.querySelector(".block-panel")
+const blockContent = document.querySelector(".block-content");
 
 categorieMoove.addEventListener("click", function(){
     blockPanel.style.backgroundColor = "#3E55FF";
@@ -55,7 +56,22 @@ imgExpand.addEventListener("click", function(){
     zoomOut.classList.toggle("active")
 })
 
+const block = document.querySelector("#block");
 
+for(block of blocks){
+    block.addEventListener("dragstart", (e) =>{
+        let selected = e.target;
+    })
+
+    board.addEventListener("dragover", (e)=>{
+        e.preventDefault();
+    })
+
+    board.addEventListener("drop", (e)=>{
+        e.preventDefault();
+        board.appendChild(selected);
+    })
+}
 
 
 
