@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .action-block{
     position: relative;
     display: flex;
@@ -15,3 +16,38 @@
     width: 10%;
 }
 
+=======
+.block-action{
+    height: 60px;
+    width: 180px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+.block-control{
+    height: 180px;
+    width: 210px;
+    border-radius: 5px;
+    background-color: #ce5607;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.block-control-drop-zone{
+    height: 120px;
+    width: 180px;
+    background-color: #fff;
+}
+
+.block{
+    opacity: 0;
+}
+
+.block-action{
+    opacity: 1;
+}
+>>>>>>> ce456011994af2d322f31448dd22a69ede2ab614

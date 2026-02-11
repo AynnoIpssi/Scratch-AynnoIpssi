@@ -1,4 +1,5 @@
-// changemennt backgroud pour block selon catégories
+import categorieModule from './05-ui/02-panels/01-categoriePanel.js';
+import dragModule from './03-core/02-program.js'
 
 const categorieMoove = document.querySelector("#moove")
 const categorieControl = document.querySelector("#control")
@@ -76,29 +77,6 @@ for(block of blocks){
 
 
 
-/** 
-const block = document.addEventListenerAll(".block-exemple1")
-const dropZone = document.querySelector("#assemble")
-
-function knowFree(x, y, width, heigt, blocs){
-    for (let bloc of blocs){
-        const rect = bloc.getBoundingClientRect();
-        const dropRect = getBoundingClentRect();
-        const dx = rect.left - dropRect.left
-        const dy = rect.top - dropRect.top
-
-        if (
-            x < dx + rect.width &&
-            x + width > dx &&
-            y < dy + rect.height &&
-            y + height > dy
-        ){
-            return false;
-        }
-    }
-    return true;
-}
-*/
 
 
 
